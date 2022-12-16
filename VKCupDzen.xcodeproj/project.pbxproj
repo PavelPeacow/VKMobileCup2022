@@ -18,7 +18,18 @@
 		B50E93092948D2A900BD65C3 /* UICollectionView+EmptyMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = B50E93082948D2A900BD65C3 /* UICollectionView+EmptyMessage.swift */; };
 		B50E930C294B5C4100BD65C3 /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = B50E930B294B5C4100BD65C3 /* Category.swift */; };
 		B50E930E294B9E8D00BD65C3 /* UIButton+Animation.swift in Sources */ = {isa = PBXBuildFile; fileRef = B50E930D294B9E8D00BD65C3 /* UIButton+Animation.swift */; };
+		B5516506294C621D00AB6AD7 /* VKCupDzenTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5516505294C621D00AB6AD7 /* VKCupDzenTests.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		B5516507294C621D00AB6AD7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B50E92DA2945C7DA00BD65C3 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B50E92E12945C7DA00BD65C3;
+			remoteInfo = VKCupDzen;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		B50E92E22945C7DA00BD65C3 /* VKCupDzen.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VKCupDzen.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -34,10 +45,19 @@
 		B50E93082948D2A900BD65C3 /* UICollectionView+EmptyMessage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UICollectionView+EmptyMessage.swift"; sourceTree = "<group>"; };
 		B50E930B294B5C4100BD65C3 /* Category.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Category.swift; sourceTree = "<group>"; };
 		B50E930D294B9E8D00BD65C3 /* UIButton+Animation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIButton+Animation.swift"; sourceTree = "<group>"; };
+		B5516503294C621D00AB6AD7 /* VKCupDzenTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VKCupDzenTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B5516505294C621D00AB6AD7 /* VKCupDzenTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VKCupDzenTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		B50E92DF2945C7DA00BD65C3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B5516500294C621D00AB6AD7 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -51,6 +71,7 @@
 			isa = PBXGroup;
 			children = (
 				B50E92E42945C7DA00BD65C3 /* VkCupDzen */,
+				B5516504294C621D00AB6AD7 /* VKCupDzenTests */,
 				B50E92E32945C7DA00BD65C3 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -59,6 +80,7 @@
 			isa = PBXGroup;
 			children = (
 				B50E92E22945C7DA00BD65C3 /* VKCupDzen.app */,
+				B5516503294C621D00AB6AD7 /* VKCupDzenTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -146,6 +168,14 @@
 			path = Model;
 			sourceTree = "<group>";
 		};
+		B5516504294C621D00AB6AD7 /* VKCupDzenTests */ = {
+			isa = PBXGroup;
+			children = (
+				B5516505294C621D00AB6AD7 /* VKCupDzenTests.swift */,
+			);
+			path = VKCupDzenTests;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -166,6 +196,24 @@
 			productReference = B50E92E22945C7DA00BD65C3 /* VKCupDzen.app */;
 			productType = "com.apple.product-type.application";
 		};
+		B5516502294C621D00AB6AD7 /* VKCupDzenTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B551650B294C621D00AB6AD7 /* Build configuration list for PBXNativeTarget "VKCupDzenTests" */;
+			buildPhases = (
+				B55164FF294C621D00AB6AD7 /* Sources */,
+				B5516500294C621D00AB6AD7 /* Frameworks */,
+				B5516501294C621D00AB6AD7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B5516508294C621D00AB6AD7 /* PBXTargetDependency */,
+			);
+			name = VKCupDzenTests;
+			productName = VKCupDzenTests;
+			productReference = B5516503294C621D00AB6AD7 /* VKCupDzenTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -178,6 +226,10 @@
 				TargetAttributes = {
 					B50E92E12945C7DA00BD65C3 = {
 						CreatedOnToolsVersion = 14.0.1;
+					};
+					B5516502294C621D00AB6AD7 = {
+						CreatedOnToolsVersion = 14.0.1;
+						TestTargetID = B50E92E12945C7DA00BD65C3;
 					};
 				};
 			};
@@ -195,6 +247,7 @@
 			projectRoot = "";
 			targets = (
 				B50E92E12945C7DA00BD65C3 /* VKCupDzen */,
+				B5516502294C621D00AB6AD7 /* VKCupDzenTests */,
 			);
 		};
 /* End PBXProject section */
@@ -206,6 +259,13 @@
 			files = (
 				B50E92F22945C7DC00BD65C3 /* LaunchScreen.storyboard in Resources */,
 				B50E92EF2945C7DC00BD65C3 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B5516501294C621D00AB6AD7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -228,7 +288,23 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		B55164FF294C621D00AB6AD7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B5516506294C621D00AB6AD7 /* VKCupDzenTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		B5516508294C621D00AB6AD7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B50E92E12945C7DA00BD65C3 /* VKCupDzen */;
+			targetProxy = B5516507294C621D00AB6AD7 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		B50E92F02945C7DC00BD65C3 /* LaunchScreen.storyboard */ = {
@@ -410,6 +486,44 @@
 			};
 			name = Release;
 		};
+		B5516509294C621D00AB6AD7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = V352R4M2J4;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = pavel.VKCupDzenTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/VKCupDzen.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/VKCupDzen";
+			};
+			name = Debug;
+		};
+		B551650A294C621D00AB6AD7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = V352R4M2J4;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = pavel.VKCupDzenTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/VKCupDzen.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/VKCupDzen";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -427,6 +541,15 @@
 			buildConfigurations = (
 				B50E92F72945C7DC00BD65C3 /* Debug */,
 				B50E92F82945C7DC00BD65C3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B551650B294C621D00AB6AD7 /* Build configuration list for PBXNativeTarget "VKCupDzenTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B5516509294C621D00AB6AD7 /* Debug */,
+				B551650A294C621D00AB6AD7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
